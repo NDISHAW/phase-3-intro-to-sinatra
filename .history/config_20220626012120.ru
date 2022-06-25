@@ -32,8 +32,8 @@ class App < Sinatra::Base
   end
 
   get '/games/:id' do
-    game = Game.find(params[:id])
-    game.to_json
+  game = Game.find(params[:id])
+  game.to_json
   end
 
 end
